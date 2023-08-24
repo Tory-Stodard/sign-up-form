@@ -108,6 +108,11 @@ input {
   border: 1px solid var(--light-border-color);
 }
 
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 4px 4px 16px #d6d4d4;
+}
+
 button {
   margin: 1.25rem 0;
   padding: 0.5rem 2rem;
