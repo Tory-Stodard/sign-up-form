@@ -12,3 +12,31 @@ body {
   display: flex;
   height: 100dvh;
 }
+
+/* Utility Styles */
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image Sidebar Section */
+
+.img-sidebar {
+  background-image: url(images/nature-scene.jpg);
+  background-size: cover;
+  width: 100%;
+  max-width: 600px;
+}
+
+.logo {
+  background-color: rgba(0, 0, 0, 0.557);
+  width: 100%;
+  color: white;
+  gap: 0.5rem;
+  position: relative;
+  bottom: 200px;
+  padding: 2.5rem 0;
+  font-size: 1.75rem;
+}
