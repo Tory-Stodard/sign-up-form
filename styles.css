@@ -1,3 +1,9 @@
+:root {
+  --accent-color: rgb(86, 131, 36);
+  --background-color: rgb(246, 243, 243);
+  --light-border-color: #e5e7eb;
+}
+
 /* Reset and General Styles */
 
 *,
@@ -13,12 +19,24 @@ body {
   height: 100dvh;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Utility Styles */
+
+.flex {
+  display: flex;
+}
 
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.margin-left {
+  margin-left: 2rem;
 }
 
 /* Image Sidebar Section */
@@ -31,12 +49,83 @@ body {
 }
 
 .logo {
-  background-color: rgba(0, 0, 0, 0.557);
+  background-color: rgba(0, 0, 0, 0.411);
   width: 100%;
   color: white;
   gap: 0.5rem;
   position: relative;
-  bottom: 200px;
+  bottom: 150px;
   padding: 2.5rem 0;
   font-size: 1.75rem;
+}
+
+/* Main Section */
+
+main {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  font-size: 1.5rem;
+  width: 75%;
+  margin-bottom: 3rem;
+}
+
+fieldset {
+  border: none;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 8px 8px 12px #bfbfbf;
+}
+
+.form-title {
+  font-size: 1.5rem;
+}
+
+fieldset .flex {
+  gap: 2rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+input {
+  line-height: 22px;
+  width: 225px;
+  border: 1px solid var(--light-border-color);
+}
+
+button {
+  margin: 1.25rem 0;
+  padding: 0.5rem 2rem;
+  border: 1px solid transparent;
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  transition-duration: 0.15s;
+}
+
+button:hover {
+  background-color: white;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
+
+.sign-in-link {
+  font-size: 1.15rem;
+}
+
+.sign-in-link a {
+  color: var(--accent-color);
+}
+
+.sign-in-link a:hover {
+  text-decoration: underline;
 }

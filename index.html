@@ -18,39 +18,54 @@
       </div>
     </section>
     <main>
-      <header>
+      <header class="margin-left">
         <p>
           This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up
-          <em>now</em>
-          to get started.
+          this in your life to help you realize your deepest dreams.
         </p>
+        <p>Sign up <em>now</em> to get started.</p>
+        <br />
         <p>You <em>know</em> you want to.</p>
       </header>
       <form action="">
         <fieldset>
-          <legend>Let's do this!</legend>
-          <div>
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name" />
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" />
+          <div class="form-title">Let's do this!</div>
+          <div class="flex">
+            <div class="input-container">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" />
+            </div>
+            <div class="input-container">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" />
+            </div>
           </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
-            <label for="phone-number">Phone Number</label>
-            <input type="number" id="phone-number" name="phone-number" />
+          <div class="flex">
+            <div class="input-container">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="input-container">
+              <label for="phone-number">Phone Number</label>
+              <input type="number" id="phone-number" name="phone-number" />
+            </div>
           </div>
-          <div>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" />
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" name="password" />
+          <div class="flex">
+            <div class="input-container">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" />
+            </div>
+            <div class="input-container">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" id="confirm-password" name="password" />
+            </div>
           </div>
         </fieldset>
-        <button type="submit">Create Account</button>
+        <button type="submit" class="margin-left">Create Account</button>
       </form>
+      <div class="sign-in-link margin-left">
+        Already have an account? <a href="">Log in</a>
+      </div>
     </main>
   </body>
 </html>
