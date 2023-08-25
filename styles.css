@@ -18,7 +18,7 @@
 
 body {
   display: flex;
-  height: 100dvh;
+  height: 100vh;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -145,7 +145,7 @@ button {
   }
 
   .img-sidebar {
-    height: 100dvh;
+    height: 100vh;
     width: auto;
     max-width: none;
   }
