@@ -61,7 +61,7 @@ a {
   color: white;
   gap: 0.5rem;
   position: relative;
-  bottom: 150px;
+  bottom: 15%;
   padding: 1.5rem 0;
   font-size: 3rem;
   font-family: 'Pacifico', cursive;
@@ -78,7 +78,7 @@ main {
 
 header {
   font-size: 1.5rem;
-  width: 75%;
+  width: 85%;
   margin-bottom: 3rem;
 }
 
@@ -124,13 +124,6 @@ button {
   transition-duration: 0.15s;
 }
 
-button:hover {
-  background-color: white;
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-  cursor: pointer;
-}
-
 .sign-in-link {
   font-size: 1.15rem;
 }
@@ -139,6 +132,81 @@ button:hover {
   color: var(--accent-color);
 }
 
-.sign-in-link a:hover {
-  text-decoration: underline;
+/* Media Queries */
+
+@media (max-width: 900px), (max-height: 620px) {
+  body {
+    flex-direction: column;
+    height: auto;
+  }
+
+  header {
+    margin-top: 3rem;
+  }
+
+  .img-sidebar {
+    height: 100dvh;
+    max-width: 100%;
+  }
+
+  .sign-in-link {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    font-size: 1.15rem;
+  }
+
+  fieldset .flex {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .margin-left {
+    margin-left: 0.75rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  fieldset {
+    padding: 2rem 0 2rem 0.75rem;
+  }
+}
+
+@media (max-width: 325px) {
+  header {
+    font-size: 1rem;
+  }
+
+  .sign-in-link a {
+    display: block;
+  }
+}
+
+@media (max-width: 250px) {
+  input {
+    width: 150px;
+  }
+
+  button {
+    font-size: 0.75rem;
+  }
+}
+
+@media (hover: hover) {
+  button:hover {
+    background-color: white;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+  }
+
+  .sign-in-link a:hover {
+    text-decoration: underline;
+  }
 }
