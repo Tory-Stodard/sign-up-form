@@ -146,6 +146,7 @@ button {
 
   .img-sidebar {
     height: 100vh;
+    width: auto;
     max-width: none;
   }
 
