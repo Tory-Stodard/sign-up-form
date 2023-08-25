@@ -146,7 +146,7 @@ button {
 
   .img-sidebar {
     height: 100dvh;
-    max-width: 100%;
+    max-width: none;
   }
 
   .sign-in-link {
